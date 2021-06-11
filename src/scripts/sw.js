@@ -9,7 +9,6 @@ self.addEventListener('install', (event) => {
 });
 
 self.addEventListener('activate', (event) => {
- console.log(event.request, 'jaran');
  event.waitUntil(CacheHelper.deleteOldCache());
 });
 
