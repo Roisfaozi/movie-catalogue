@@ -1,9 +1,9 @@
 import 'regenerator-runtime'
 import '../styles/responsive.css'
-import '../styles/style.css'
+import '../styles/styles.css'
 import CONFIG from './globals/config'
 import FooterToolsInitiator from './utils/footer-tools-initiator'
-import swRegister from './utils/sw-register'
+import swRegister from './utils/sw-registration'
 import WebSocketInitiator from './utils/websocket-initiator'
 import App from './views/app'
 
