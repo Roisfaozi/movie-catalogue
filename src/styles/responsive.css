@@ -1,72 +1,72 @@
 @media screen and (min-width: 650px) {
- .app-bar {
-  grid-template-columns: 1fr auto;
-  padding: 8px 32px;
- }
+  .app-bar {
+    grid-template-columns: 1fr auto !important;
+    padding: 8px 32px !important;
+  }
 
- .app-bar .app-bar__brand h1 {
-  font-size: 1.5em;
- }
+  .app-bar .app-bar__brand h1 {
+    font-size: 1.5em !important;
+  }
 
- .app-bar .app-bar__menu {
-  display: none;
- }
+  .app-bar .app-bar__menu {
+    display: none !important;
+  }
 
- .app-bar .app-bar__navigation {
-  position: static;
-  width: 100%;
- }
+  .app-bar .app-bar__navigation {
+    position: static !important;
+    width: 100% !important;
+  }
 
- .app-bar .app-bar__navigation ul li {
-  display: inline-block;
- }
+  .app-bar .app-bar__navigation ul li {
+    display: inline-block !important;
+  }
 
- .app-bar .app-bar__navigation ul li a {
-  display: inline-block;
-  width: 120px;
-  text-align: center;
-  margin: 0;
- }
+  .app-bar .app-bar__navigation ul li a {
+    display: inline-block !important;
+    width: 120px !important;
+    text-align: center !important;
+    margin: 0 !important;
+  }
 
- .movies {
-  grid-template-columns: 1fr 1fr;
- }
+  .movies {
+    grid-template-columns: 1fr 1fr !important;
+  }
 
- .movie {
-  grid-template-columns: auto 1fr;
- }
+  .movie {
+    grid-template-columns: auto 1fr !important;
+  }
 
- .movie .movie__title {
-  grid-column-start: 1;
-  grid-column-end: 3;
- }
+  .movie .movie__title {
+    grid-column-start: 1 !important;
+    grid-column-end: 3 !important;
+  }
 
- .movie .movie__overview {
-  grid-column-start: 1;
-  grid-column-end: 3;
- }
+  .movie .movie__overview {
+    grid-column-start: 1 !important;
+    grid-column-end: 3 !important;
+  }
 }
 
 @media screen and (min-width: 800px) {
- .app-bar .app-bar__brand h1 {
-  font-size: 2em;
- }
+  .app-bar .app-bar__brand h1 {
+    font-size: 2em !important;
+  }
 }
 
 @media screen and (min-width: 850px) {
- .movies {
-  grid-template-columns: repeat(3, 1fr);
- }
+  .movies {
+    grid-template-columns: repeat(3, 1fr) !important;
+  }
 }
 
 @media screen and (min-width: 1200px) {
- .movies {
-  grid-template-columns: repeat(4, 1fr);
- }
+  .movies {
+    grid-template-columns: repeat(4, 1fr) !important;
+  }
 }
 
 @media screen and (min-width: 1600px) {
- .movies {
-  grid-template-columns: repeat(5, 1fr);
- }
+  .movies {
+    grid-template-columns: repeat(5, 1fr) !important;
+  }
 }

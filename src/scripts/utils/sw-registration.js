@@ -1,12 +1,18 @@
-import runtime from 'serviceworker-webpack-plugin/lib/runtime';
+import * as WorkboxWindow from 'workbox-window'
 
 const swRegister = async () => {
- if ('serviceWorker' in navigator) {
-  await runtime.register();
- }
- if ('serviceWorker' in navigator) {
-  await runtime.register();
- }
-};
+  if (!('serviceWorker' in navigator)) {
+    console.log('Service Worker not supported in the browser')
+    return
+  }
 
-export default swRegister;
+  const wb = new WorkboxWindow.Workbox('/sw.bundle.js')
+  try {
+    await wb.register()
+    console.log('Service worker registered')
+  } catch (error) {
+    console.log('Failed to register service worker', error)
+  }
+}
+
+export default swRegister
